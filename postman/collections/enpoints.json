@@ -1,0 +1,574 @@
+{
+	"info": {
+		"_postman_id": "33ab8003-ba17-45a3-a52f-b19b2bc48dc5",
+		"name": "enpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "17130971-33ab8003-ba17-45a3-a52f-b19b2bc48dc5"
+	},
+	"item": [
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "listar",
+					"id": "c1f98e95-64a7-4c76-a34b-6edda233bbd9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/v1/clientes",
+							"path": [
+								"v1",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar",
+					"id": "8c8cc169-0aca-4f4d-af11-cfbab8b19331",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/v1/clientes/{id}",
+							"path": [
+								"v1",
+								"clientes",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar",
+					"id": "eedbaa4b-0c20-4fcb-8d51-073a1b1f54ea",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "/v1/clientes/{id}",
+							"path": [
+								"v1",
+								"clientes",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir",
+					"id": "f00fe1db-5baa-4603-98dd-9a21ec91e025",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Idempotency-Key",
+								"value": "{{$randomUUID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/v1/clientes",
+							"path": [
+								"v1",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remover",
+					"id": "705067e8-b3a8-4c4f-ba74-80a926d3b359",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "/v1/cliente/{id}",
+							"path": [
+								"v1",
+								"cliente",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "58fd6d13-d774-4a35-99c4-4071064d4fa2"
+		},
+		{
+			"name": "pedidos",
+			"item": [
+				{
+					"name": "listar",
+					"id": "b61771bc-5641-44d1-9386-fc4d26d4d02c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/clientes/{id_do_cliente}/pedidos",
+							"path": [
+								"clientes",
+								"{id_do_cliente}",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar",
+					"id": "93980b60-6269-4457-a843-8f208d0593a5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/v1/pedidos/{id}",
+							"path": [
+								"v1",
+								"pedidos",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar",
+					"id": "d5f3e9eb-e8a5-4bc3-96aa-f0c8d01374b2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "/v1/pedidos/{id}",
+							"path": [
+								"v1",
+								"pedidos",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir",
+					"id": "1d10c044-f75d-4f32-ab6e-81baeb9fbf50",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Idempotency-Key",
+								"value": "{{$randomUUID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/v1/pedidos",
+							"path": [
+								"v1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remover",
+					"id": "cccd125e-53f8-48ae-b385-439ed6c1376f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "/v1/pedidos/{id}",
+							"path": [
+								"v1",
+								"pedidos",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "92f00aef-befc-465e-8803-e0133b879efc"
+		},
+		{
+			"name": "Itens de Menu",
+			"item": [
+				{
+					"name": "listar",
+					"id": "2aa085d3-136e-410e-baff-a480d9e7821f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/v1/menu-itens",
+							"path": [
+								"v1",
+								"menu-itens"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar",
+					"id": "ed1d628c-fa1a-49ac-a4bc-56edbd392dc4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/v1/menu-itens/{id}",
+							"path": [
+								"v1",
+								"menu-itens",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar",
+					"id": "e859bbbe-d848-40a2-8241-46e5e391c645",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "/v1/menu-itens/{id}",
+							"path": [
+								"v1",
+								"menu-itens",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir",
+					"id": "f974edd4-930a-43f8-9002-2ef56c0e7fca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Idempotency-Key",
+								"value": "{{$randomUUID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "/v1/menu-itens",
+							"path": [
+								"v1",
+								"menu-itens"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remover",
+					"id": "3baf197c-391d-440e-b333-957eb29914f7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTgwMjg2NjEsImV4cCI6MTY5ODAzMDEwMX0.3VMtULNmNUl1lm46nYUknY7q8JEnmwMGG5r-Myy7rVc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "/v1/menu-itens/{id}",
+							"path": [
+								"v1",
+								"menu-itens",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "35bc31b2-100e-4e41-8ed0-f6d1071aa47e"
+		},
+		{
+			"name": "cadastro/login",
+			"item": [
+				{
+					"name": "cadastro",
+					"id": "f09e2db4-a747-410b-96ed-ad58fada3f87",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "/v1/cadastro",
+							"path": [
+								"v1",
+								"cadastro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "autenticar",
+					"id": "e0e6ff5b-41a6-49d8-8ef1-ad1a063a0cdc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "/cadastro",
+							"path": [
+								"cadastro"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "ca6e2c77-48b9-49bc-8f77-7663b72c616a"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "Bearer token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e59f4a35-7f90-4b57-baec-f692cee30f89",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "616a36b4-9cbe-428d-918b-11fa78044f13",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "afcd979b-b1ca-43c0-82e3-f8c03d10b8c3",
+			"key": "{{token}}",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
