@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "ee1429f7-1c27-41cb-9b2e-a494f41740ae",
 		"name": "OrderManagementAPI",
+		"description": "Documentação completa da API\n\nTrabalho apresentado para a diciplina de Apis e Web Services da PUC - MG\n\n## Integrantes\n\n```\nEmerson de Almeida Rocha (18524)\nMarcos Vinícius da Silva Antonio (179750)\nMatheus Peluca de Paula (180320)\nReinaldo Oliveira Machado Junior (177349)\nRodrigo da Silva Pimenta (177875)\n\n ```",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "17130971-ee1429f7-1c27-41cb-9b2e-a494f41740ae"
 	},
@@ -59,9 +60,13 @@
 									}
 								],
 								"url": {
-									"raw": "{{host}}/v1/clients?page=1&pageSize=2",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/clients?page=1&pageSize=2",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -322,9 +327,13 @@
 									}
 								],
 								"url": {
-									"raw": "{{host}}/v1/clients/:id",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/clients/:id",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -547,9 +556,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{host}}/v1/clients/:id",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/clients/:id",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -759,9 +772,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{host}}/v1/clients",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/clients",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -1150,9 +1167,13 @@
 									}
 								],
 								"url": {
-									"raw": "{{host}}/v1/clients/:id",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/clients/:id",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -1543,9 +1564,13 @@
 									}
 								],
 								"url": {
-									"raw": "{{host}}/v1/clients/:id/orders?page=1&pageSize=2",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/clients/:id/orders?page=1&pageSize=2",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -1820,9 +1845,13 @@
 									}
 								],
 								"url": {
-									"raw": "{{host}}/v1/orders/:id",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/orders/:id",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -2038,9 +2067,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{host}}/v1/clients",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/clients",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -2335,9 +2368,13 @@
 									}
 								],
 								"url": {
-									"raw": "{{host}}/v1/pedidos/:id",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/pedidos/:id",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -2708,9 +2745,13 @@
 									}
 								],
 								"url": {
-									"raw": "{{host}}/v1/menu-itens?page=1&pageSize=2",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/menu-itens?page=1&pageSize=2",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -2818,9 +2859,13 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{host}}/v1/menu-itens/:id",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/menu-itens/:id",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -2932,9 +2977,13 @@
 								"method": "PATCH",
 								"header": [],
 								"url": {
-									"raw": "{{host}}/v1/menu-itens/:id",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/menu-itens/:id",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -3024,14 +3073,18 @@
 								"header": [
 									{
 										"key": "Idempotency-Key",
-										"value": "{{$randomUUID}}",
+										"value": "de93df14-1cf5-44f9-b649-48a38c83d94c",
 										"type": "text"
 									}
 								],
 								"url": {
-									"raw": "{{host}}/v1/menu-items?description=Salada&price=8.99",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/menu-items?description=Salada&price=8.99",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -3135,9 +3188,13 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{host}}/v1/menu-itens/:id",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/menu-itens/:id",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
@@ -3242,9 +3299,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{host}}/v1/auth",
+									"raw": "https://94a7c802-d085-4504-b836-c3db5e841f49.mock.pstmn.io/v1/auth",
+									"protocol": "https",
 									"host": [
-										"{{host}}"
+										"94a7c802-d085-4504-b836-c3db5e841f49",
+										"mock",
+										"pstmn",
+										"io"
 									],
 									"path": [
 										"v1",
