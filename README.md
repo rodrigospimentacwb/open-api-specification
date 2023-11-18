@@ -13,3 +13,4 @@ Rodrigo da Silva Pimenta (177875)
 
 Criado utilizando Postman.
 Mockserver é necessário para realizar as chamadas simuladas de exemplo.
+Também é necessário criar uma variável de ambiente {{host}} no postman, onde deve ser colocado o endereço gerado ao subir o mockserver.
